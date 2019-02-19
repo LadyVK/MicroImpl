@@ -4,6 +4,7 @@ checkout scm
 }
 stage('Maven Build'){
 sh '/opt/apache-maven-3.6.0/bin/mvn install'
+sh 'cd ./target'
 }
 stage('Build Image'){
 sh 'sudo docker build -t accountservice:${BUILD_NUMBER} .'
