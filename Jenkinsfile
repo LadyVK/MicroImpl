@@ -13,4 +13,5 @@ stage('Push Image'){
 sh 'docker login -u vidyakamath0612 -p 8990benka'
 sh 'docker push vidyakamath0612/accountservice:${BUILD_NUMBER} '
 }
+
 }
