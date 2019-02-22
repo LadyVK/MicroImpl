@@ -14,7 +14,7 @@ sh 'docker push vidyakamath0612/accountservice:${BUILD_NUMBER} '
 sh 'docker push vidyakamath0612/accountservice:latest'
 }
 stage('Force Deployment'){
-sh 'aws ecs update-service --region us-east-1 --cluster VidyaJenkins --service VidyaServiceJenkins --force-new-deployment'
+sh 'aws ecs update-service --region us-east-1 --cluster VidyaJenkins --service VidyaJenkinsService --force-new-deployment'
 
 }
 
