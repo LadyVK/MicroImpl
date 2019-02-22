@@ -50,7 +50,7 @@ public class AccountRestController
     public String deleteAccount(@PathVariable("id") String id) {
  
 	    acctInfo.delete(id);
-	   return "Deleted";
+	   return "Deleted the user";
     }
    
 /*    @RequestMapping(value = "/{id}", method = RequestMethod.PUT)
